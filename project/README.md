@@ -4,6 +4,10 @@ The goal I understood from the assignment: the project unifies transactions from
 
 Stack as requested: Next.js 16 (App Router), React 19, TypeScript, Tailwind, SWR, OpenAI.
 
+**Live demo:** https://circuit-labs-finance-dashboard.vercel.app/
+
+Log in with any account below. The AI assistant works on the live demo with no setup needed.
+
 ## Run
 
 ```bash
@@ -21,9 +25,9 @@ npm run dev          # http://localhost:3000
 | analyst | marcus.chen@circuitlabs.io | `CircuitAnalyst2025!` | Stats |
 | viewer | jordan.lee@circuitlabs.io | `CircuitViewer2025!` | Transactions |
 
-### AI assistant (optional)
+### AI assistant
 
-Copy `.env.example` to `.env.local` and set `OPENAI_API_KEY`. Without a key the Assistant tab just shows a setup message; the rest of the app works fine.
+It already works on the live demo (the key is set server-side). To run it locally, copy `.env.example` to `.env.local` and set `OPENAI_API_KEY`; without a key the Assistant tab just shows a setup message and the rest of the app still works.
 
 ## How it's organized
 
@@ -58,7 +62,6 @@ It has three tools it can combine: `query_transactions` (filter, group, total, i
 
 - The "starred transactions" view from the Figma (it wasn't asked for).
 - Real `.xlsx` export; I used CSV instead.
-- A live deploy; it runs locally.
 - Server-side auth and tests.
 
 ## AI tools used
